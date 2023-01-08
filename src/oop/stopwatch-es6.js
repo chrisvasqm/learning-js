@@ -28,7 +28,7 @@ class Stopwatch {
     this.#isRunning = false;
   }
 
-  get getDuration() {
+  get duration() {
     return this.#duration;
   }
 }
