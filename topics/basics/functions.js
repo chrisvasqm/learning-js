@@ -1,11 +1,17 @@
 function sum(first, second) {
-    return first + second;
+  return first + second;
 }
 
-console.log(sum(2, 2));
+console.log("Sum:", sum(2, 2));
 
 function greet(name) {
-    console.log(`Hello ${name}`);
+  console.log(`Greet: Hello ${name}`);
 }
 
-greet('Chris');
+greet("Chris");
+
+function calculate(first, second, callback) {
+  return callback(first, second);
+}
+
+console.log("Calculate:", calculate(2, 3, (first, second) => first + second));
